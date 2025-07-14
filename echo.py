@@ -12,7 +12,7 @@ def echo_text(update: Update, context: CallbackContext):
     update.message.reply_text(update.message.text)
 
 def echo_photo(update: Update, context: CallbackContext):
-    update.message.reply_photo(update.message.photo[-1].file_id)
+    update.message.reply_photo(update.message.photo.file_id)
 
 def echo_video(update: Update, context: CallbackContext):
     update.message.reply_video(update.message.video.file_id)
